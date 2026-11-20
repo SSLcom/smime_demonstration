@@ -1,0 +1,26 @@
+{
+  "step": "generate_employee1",
+  "recorded_at": "2026-11-20T19:08:57+00:00",
+  "request": {
+    "method": "POST",
+    "path": "/generate_certificate",
+    "auth_placement": "query",
+    "query": {
+      "account_key": "REDACTED",
+      "secret_key": "REDACTED"
+    },
+    "json": {
+      "ref": "co-ce1lg16i624",
+      "csr": "<CSR redacted>"
+    }
+  },
+  "response": {
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body": {
+      "cert_results": null,
+      "cert_common_name": null,
+      "error_message": "City can't be blank and State can't be blank"
+    }
+  }
+}

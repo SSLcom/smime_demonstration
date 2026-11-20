@@ -1,0 +1,63 @@
+{
+  "step": "create_order_b",
+  "recorded_at": "2026-11-20T16:45:13+00:00",
+  "request": {
+    "method": "POST",
+    "path": "/certificates",
+    "auth_placement": "query",
+    "query": {
+      "account_key": "REDACTED",
+      "secret_key": "REDACTED"
+    },
+    "json": {
+      "product": 300,
+      "period": 365,
+      "external_order_number": "probe-20261120-163255-8f4a-order_b",
+      "email_address": "mailbox@example.com",
+      "recipient": {
+        "email": "mailbox@example.com"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body": {
+      "ref": "co-671lg0u8oaf",
+      "registrant": {
+        "organization": null,
+        "organization_unit": null,
+        "street_address_1": null,
+        "street_address_2": null,
+        "street_address_3": null,
+        "locality": null,
+        "state_or_province": null,
+        "post_office_box": null,
+        "postal_code": null,
+        "country": null,
+        "email": "mailbox@example.com",
+        "assumed_name": null,
+        "company_number": null,
+        "business_category": null,
+        "organization_identifier": null,
+        "duns_number": null,
+        "incorporation_country": null,
+        "incorporation_date": null,
+        "incorporation_state": null,
+        "incorporation_city": null
+      },
+      "order_status": "validating, please wait",
+      "validations": null,
+      "order_amount": "$30.00",
+      "external_order_number": "probe-20261120-163255-8f4a-order_b",
+      "certificate_url": "https://sandbox.ssl.com/team/TEAM/certificate_orders/co-671lg0u8oaf",
+      "receipt_url": "https://sandbox.ssl.com/team/TEAM/orders/857e-1lg0u8o",
+      "smart_seal_url": "https://sandbox.ssl.com/team/TEAM/certificate_orders/co-671lg0u8oaf/site_seal",
+      "validation_url": "https://sandbox.ssl.com/team/TEAM/certificate_orders/co-671lg0u8oaf/validation",
+      "certificates": null,
+      "certificate_contents": {
+        "ref": "co-671lg0u8oaf-0"
+      }
+    }
+  }
+}

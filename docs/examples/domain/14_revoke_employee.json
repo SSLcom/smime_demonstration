@@ -1,0 +1,15 @@
+{
+  "method": "DELETE",
+  "path": "/certificate/co-171lg19oh9a",
+  "query": {
+    "reason": "CESSATIONOFOPERATION",
+    "account_key": "YOUR_ACCOUNT_KEY",
+    "secret_key": "YOUR_SECRET_KEY"
+  },
+  "json": null,
+  "status": 200,
+  "elapsed_seconds": 0.94,
+  "response": {
+    "status": "revoked"
+  }
+}

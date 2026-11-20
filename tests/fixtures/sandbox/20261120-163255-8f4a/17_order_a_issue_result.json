@@ -1,0 +1,63 @@
+{
+  "step": "order_a_issue_result",
+  "recorded_at": "2026-11-20T16:44:52+00:00",
+  "request": {
+    "method": "GET",
+    "path": "/certificate/co-041lg0thnaa",
+    "auth_placement": "query",
+    "query": {
+      "response_type": "individually",
+      "response_encoding": "base64",
+      "account_key": "REDACTED",
+      "secret_key": "REDACTED"
+    },
+    "json": null
+  },
+  "response": {
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body": {
+      "description": "1 Year Personal Basic",
+      "product": "300",
+      "product_name": "personal-basic",
+      "order_status": "validated",
+      "order_date": "2026-11-20T10:32:55.000-06:00",
+      "registrant": null,
+      "special_fields": null,
+      "certificates": null,
+      "common_name": "mailbox@example.com",
+      "serial_number": null,
+      "domains_qty_purchased": "2",
+      "wildcard_qty_purchased": "0",
+      "subject_alternative_names": null,
+      "validations": {
+        "example.com": {
+          "method": null,
+          "status": "not yet started"
+        },
+        "mailbox@example.com": {
+          "method": null,
+          "status": "not yet started"
+        }
+      },
+      "effective_date": null,
+      "expiration_date": null,
+      "algorithm": null,
+      "external_order_number": "probe-20261120-163255-8f4a-order_a",
+      "domains": [
+        "example.com",
+        "mailbox@example.com"
+      ],
+      "site_seal_code": null,
+      "subscriber_agreement": null,
+      "server_software": 1,
+      "contacts": [],
+      "authorized_users": {
+        "contract_signer": {},
+        "contract_requestor": {},
+        "contract_approver": {}
+      },
+      "end_entity_certificates": null
+    }
+  }
+}

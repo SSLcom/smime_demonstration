@@ -1,0 +1,93 @@
+{
+  "method": "GET",
+  "path": "/certificate/co-cb1lg19qlff",
+  "query": {
+    "response_type": "individually",
+    "response_encoding": "base64",
+    "account_key": "YOUR_ACCOUNT_KEY",
+    "secret_key": "YOUR_SECRET_KEY"
+  },
+  "json": null,
+  "status": 200,
+  "elapsed_seconds": 0.22,
+  "response": {
+    "description": "1 Year Personal Basic",
+    "product": "300",
+    "product_name": "personal-basic",
+    "order_status": "issued",
+    "order_date": "2026-11-20T14:02:29.000-06:00",
+    "registrant": {
+      "organization": null,
+      "organization_unit": null,
+      "street_address_1": null,
+      "street_address_2": null,
+      "street_address_3": null,
+      "locality": "Houston",
+      "state_or_province": "Texas",
+      "post_office_box": null,
+      "postal_code": null,
+      "country": null,
+      "email": "jane.doe@example.com",
+      "assumed_name": null,
+      "company_number": null,
+      "business_category": null,
+      "organization_identifier": null,
+      "duns_number": null,
+      "incorporation_country": null,
+      "incorporation_date": null,
+      "incorporation_state": null,
+      "incorporation_city": null
+    },
+    "special_fields": null,
+    "certificates": "-----BEGIN CERTIFICATE-----\nMIIGXzCCBEegAwIBAgIQNRxT...(shortened)\n-----END CERTIFICATE-----\n-----BEGIN CERTIFICATE-----\nMIIG+jCCBOKgAwIBAgIQezPn...(shortened)\n-----END CERTIFICATE-----\n-----BEGIN CERTIFICATE-----\nMIIF+zCCA+OgAwIBAgIIIzOb...(shortened)\n-----END CERTIFICATE-----\n",
+    "common_name": null,
+    "serial_number": "351c531f18bfcdd924d9feb723b96bc6",
+    "domains_qty_purchased": "2",
+    "wildcard_qty_purchased": "0",
+    "subject_alternative_names": [],
+    "validations": {
+      "example.com": {
+        "method": null,
+        "status": "not yet started"
+      },
+      "jane.doe@example.com": {
+        "method": null,
+        "status": "not yet started"
+      }
+    },
+    "effective_date": "2026-11-20T13:54:09.000-06:00",
+    "expiration_date": "2027-11-19T13:54:09.000-06:00",
+    "algorithm": "SHA256",
+    "external_order_number": "individual-guide-mailbox-1",
+    "domains": [
+      "example.com",
+      "jane.doe@example.com"
+    ],
+    "site_seal_code": null,
+    "subscriber_agreement": null,
+    "server_software": 1,
+    "contacts": [],
+    "authorized_users": {
+      "contract_signer": {},
+      "contract_requestor": {},
+      "contract_approver": {}
+    },
+    "end_entity_certificates": [
+      {
+        "certificate": "-----BEGIN CERTIFICATE-----\nMIIDcTCCAvegAwIBAgIQGeFq...(shortened)\n-----END CERTIFICATE-----\n-----BEGIN CERTIFICATE-----\nMIIDqTCCAy+gAwIBAgIQVnuC...(shortened)\n-----END CERTIFICATE-----\n-----BEGIN CERTIFICATE-----\nMIICrTCCAjKgAwIBAgIIPTUU...(shortened)\n-----END CERTIFICATE-----\n",
+        "serial": "19e16a152838977cd3c5ac077fb75c11",
+        "status": "issued"
+      },
+      {
+        "certificate": "-----BEGIN CERTIFICATE-----\nMIIDcjCCAvegAwIBAgIQSweN...(shortened)\n-----END CERTIFICATE-----\n-----BEGIN CERTIFICATE-----\nMIIDqTCCAy+gAwIBAgIQVnuC...(shortened)\n-----END CERTIFICATE-----\n-----BEGIN CERTIFICATE-----\nMIICrTCCAjKgAwIBAgIIPTUU...(shortened)\n-----END CERTIFICATE-----\n",
+        "serial": "4b078d869aea489351b7f843ddafcd6f",
+        "status": "issued"
+      },
+      {
+        "certificate": "-----BEGIN CERTIFICATE-----\nMIIGXzCCBEegAwIBAgIQNRxT...(shortened)\n-----END CERTIFICATE-----\n-----BEGIN CERTIFICATE-----\nMIIG+jCCBOKgAwIBAgIQezPn...(shortened)\n-----END CERTIFICATE-----\n-----BEGIN CERTIFICATE-----\nMIIF+zCCA+OgAwIBAgIIIzOb...(shortened)\n-----END CERTIFICATE-----\n",
+        "serial": "351c531f18bfcdd924d9feb723b96bc6",
+        "status": "issued"
+      }
+    ]
+  }
+}

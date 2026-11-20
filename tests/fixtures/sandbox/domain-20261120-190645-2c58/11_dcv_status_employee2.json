@@ -1,0 +1,26 @@
+{
+  "step": "dcv_status_employee2",
+  "recorded_at": "2026-11-20T19:10:12+00:00",
+  "request": {
+    "method": "GET",
+    "path": "/certificate/co-c01lg16oi18/validations/status",
+    "auth_placement": "query",
+    "query": {
+      "account_key": "REDACTED",
+      "secret_key": "REDACTED"
+    },
+    "json": null
+  },
+  "response": {
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body": {
+      "validation_status": {
+        "smimedemo.sslcom.link": {
+          "method": null,
+          "status": "not yet started"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "step": "revoke_all",
+  "recorded_at": "2026-11-20T16:47:44+00:00",
+  "request": {
+    "method": "DELETE",
+    "path": "/certificate/co-041lg0thnaa",
+    "auth_placement": "query",
+    "query": {
+      "reason": "CESSATIONOFOPERATION",
+      "account_key": "REDACTED",
+      "secret_key": "REDACTED"
+    },
+    "json": null
+  },
+  "response": {
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body": {
+      "status": "revoked"
+    }
+  }
+}

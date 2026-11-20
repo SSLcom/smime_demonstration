@@ -1,0 +1,19 @@
+{
+  "method": "POST",
+  "path": "/generate_certificate",
+  "query": {
+    "account_key": "YOUR_ACCOUNT_KEY",
+    "secret_key": "YOUR_SECRET_KEY"
+  },
+  "json": {
+    "ref": "co-cb1lg19qlff",
+    "csr": "-----BEGIN CERTIFICATE REQUEST-----\nMIIBCDCBrwIBADAdMRswGQYD...(shortened)\n-----END CERTIFICATE REQUEST-----\n"
+  },
+  "status": 200,
+  "elapsed_seconds": 0.29,
+  "response": {
+    "cert_results": null,
+    "cert_common_name": null,
+    "error_message": "City can't be blank and State can't be blank"
+  }
+}

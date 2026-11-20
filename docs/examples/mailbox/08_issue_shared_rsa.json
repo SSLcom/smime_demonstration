@@ -1,0 +1,19 @@
+{
+  "method": "POST",
+  "path": "/generate_certificate",
+  "query": {
+    "account_key": "YOUR_ACCOUNT_KEY",
+    "secret_key": "YOUR_SECRET_KEY"
+  },
+  "json": {
+    "ref": "co-cb1lg19qlff",
+    "csr": "-----BEGIN CERTIFICATE REQUEST-----\nMIIDkjCCAfoCAQAwHTEbMBkG...(shortened)\n-----END CERTIFICATE REQUEST-----\n"
+  },
+  "status": 200,
+  "elapsed_seconds": 5.07,
+  "response": {
+    "cert_results": "-----BEGIN CERTIFICATE-----\nMIIGXzCCBEegAwIBAgIQNRxT...(shortened)\n-----END CERTIFICATE-----\n-----BEGIN CERTIFICATE-----\nMIIG+jCCBOKgAwIBAgIQezPn...(shortened)\n-----END CERTIFICATE-----\n-----BEGIN CERTIFICATE-----\nMIIF+zCCA+OgAwIBAgIIIzOb...(shortened)\n-----END CERTIFICATE-----\n",
+    "cert_common_name": "70596153992369174626326842725644200902.crt",
+    "error_message": null
+  }
+}

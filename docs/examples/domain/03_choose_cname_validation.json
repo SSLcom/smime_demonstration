@@ -1,0 +1,54 @@
+{
+  "method": "PUT",
+  "path": "/certificate/co-7f1lg19kfaa",
+  "query": {
+    "account_key": "YOUR_ACCOUNT_KEY",
+    "secret_key": "YOUR_SECRET_KEY"
+  },
+  "json": {
+    "domains": {
+      "smimedemo-globex.sslcom.link": {
+        "dcv": "cname_csr_hash"
+      }
+    }
+  },
+  "status": 200,
+  "elapsed_seconds": 1.73,
+  "response": {
+    "ref": "co-7f1lg19kfaa",
+    "registrant": {
+      "organization": null,
+      "organization_unit": null,
+      "street_address_1": null,
+      "street_address_2": null,
+      "street_address_3": null,
+      "locality": "Houston",
+      "state_or_province": "Texas",
+      "post_office_box": null,
+      "postal_code": null,
+      "country": null,
+      "email": "alice@smimedemo-globex.sslcom.link",
+      "assumed_name": null,
+      "company_number": null,
+      "business_category": null,
+      "organization_identifier": null,
+      "duns_number": null,
+      "incorporation_country": null,
+      "incorporation_date": null,
+      "incorporation_state": null,
+      "incorporation_city": null
+    },
+    "order_status": "validating, please wait",
+    "validations": null,
+    "order_amount": "$30.00",
+    "external_order_number": "globex-alice",
+    "certificate_url": "https://sandbox.ssl.com/team/YOUR_TEAM/certificate_orders/co-7f1lg19kfaa",
+    "receipt_url": "https://sandbox.ssl.com/team/YOUR_TEAM/orders/00ac-1lg19kf",
+    "smart_seal_url": "https://sandbox.ssl.com/team/YOUR_TEAM/certificate_orders/co-7f1lg19kfaa/site_seal",
+    "validation_url": "https://sandbox.ssl.com/team/YOUR_TEAM/certificate_orders/co-7f1lg19kfaa/validation",
+    "certificates": null,
+    "certificate_contents": {
+      "ref": "co-7f1lg19kfaa-0"
+    }
+  }
+}

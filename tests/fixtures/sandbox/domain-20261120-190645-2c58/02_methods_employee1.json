@@ -1,0 +1,63 @@
+{
+  "step": "methods_employee1",
+  "recorded_at": "2026-11-20T19:06:51+00:00",
+  "request": {
+    "method": "GET",
+    "path": "/certificate/co-ce1lg16i624/validations/methods",
+    "auth_placement": "query",
+    "query": {
+      "account_key": "REDACTED",
+      "secret_key": "REDACTED"
+    },
+    "json": null
+  },
+  "response": {
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body": {
+      "instructions": "https://www.ssl.com/faqs/ssl-dv-validation-requirements/",
+      "md5_hash": "C636DB9505C34E23333008083701584A",
+      "sha2_hash": "F7BC72E79A65155869B9FB1EECC50A720668E3E8C40E57D7AF530A312A970EB8",
+      "dns_sha2_hash": "F7BC72E79A65155869B9FB1EECC50A72.0668E3E8C40E57D7AF530A312A970EB8.20261120",
+      "dcv_methods": {
+        "smimedemo.sslcom.link": {
+          "email_addresses": [
+            "admin@sslcom.link",
+            "administrator@sslcom.link",
+            "webmaster@sslcom.link",
+            "hostmaster@sslcom.link",
+            "postmaster@sslcom.link",
+            "admin@smimedemo.sslcom.link",
+            "administrator@smimedemo.sslcom.link",
+            "webmaster@smimedemo.sslcom.link",
+            "hostmaster@smimedemo.sslcom.link",
+            "postmaster@smimedemo.sslcom.link"
+          ],
+          "http_csr_hash": {
+            "http": "http://smimedemo.sslcom.link/.well-known/pki-validation/C636DB9505C34E23333008083701584A.txt",
+            "allow_https": "true",
+            "contents": "F7BC72E79A65155869B9FB1EECC50A720668E3E8C40E57D7AF530A312A970EB8\nssl.com\n20261120"
+          },
+          "cname_csr_hash": {
+            "cname": "_C636DB9505C34E23333008083701584A.smimedemo.sslcom.link. CNAME F7BC72E79A65155869B9FB1EECC50A72.0668E3E8C40E57D7AF530A312A970EB8.20261120.ssl.com",
+            "name": "_C636DB9505C34E23333008083701584A.smimedemo.sslcom.link",
+            "value": "F7BC72E79A65155869B9FB1EECC50A72.0668E3E8C40E57D7AF530A312A970EB8.20261120.ssl.com"
+          }
+        },
+        "employee1@smimedemo.sslcom.link": {
+          "http_csr_hash": {
+            "http": "http://employee1@smimedemo.sslcom.link/.well-known/pki-validation/C636DB9505C34E23333008083701584A.txt",
+            "allow_https": "true",
+            "contents": "F7BC72E79A65155869B9FB1EECC50A720668E3E8C40E57D7AF530A312A970EB8\nssl.com\n20261120"
+          },
+          "cname_csr_hash": {
+            "cname": "_C636DB9505C34E23333008083701584A.employee1@smimedemo.sslcom.link. CNAME F7BC72E79A65155869B9FB1EECC50A72.0668E3E8C40E57D7AF530A312A970EB8.20261120.ssl.com",
+            "name": "_C636DB9505C34E23333008083701584A.employee1@smimedemo.sslcom.link",
+            "value": "F7BC72E79A65155869B9FB1EECC50A72.0668E3E8C40E57D7AF530A312A970EB8.20261120.ssl.com"
+          }
+        }
+      },
+      "ca_tag": "ssl.com"
+    }
+  }
+}

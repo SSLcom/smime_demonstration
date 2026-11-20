@@ -1,0 +1,27 @@
+{
+  "step": "api_parameters_show",
+  "recorded_at": "2026-11-20T16:32:57+00:00",
+  "request": {
+    "method": "GET",
+    "path": "/certificate/co-041lg0thnaa/api_parameters/show",
+    "auth_placement": "query",
+    "query": {
+      "account_key": "REDACTED",
+      "secret_key": "REDACTED"
+    },
+    "json": null
+  },
+  "response": {
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body": {
+      "parameters": {
+        "account_key": "REDACTED",
+        "secret_key": "REDACTED",
+        "query_type": null,
+        "show_subscriber_agreement": "Y",
+        "response_type": null
+      }
+    }
+  }
+}

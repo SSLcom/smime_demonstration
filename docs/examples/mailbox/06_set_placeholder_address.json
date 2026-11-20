@@ -1,0 +1,51 @@
+{
+  "method": "PUT",
+  "path": "/certificate/co-cb1lg19qlff",
+  "query": {
+    "account_key": "YOUR_ACCOUNT_KEY",
+    "secret_key": "YOUR_SECRET_KEY"
+  },
+  "json": {
+    "locality": "Houston",
+    "state_or_province": "Texas"
+  },
+  "status": 200,
+  "elapsed_seconds": 0.92,
+  "response": {
+    "ref": "co-cb1lg19qlff",
+    "registrant": {
+      "organization": null,
+      "organization_unit": null,
+      "street_address_1": null,
+      "street_address_2": null,
+      "street_address_3": null,
+      "locality": "Houston",
+      "state_or_province": "Texas",
+      "post_office_box": null,
+      "postal_code": null,
+      "country": null,
+      "email": "jane.doe@example.com",
+      "assumed_name": null,
+      "company_number": null,
+      "business_category": null,
+      "organization_identifier": null,
+      "duns_number": null,
+      "incorporation_country": null,
+      "incorporation_date": null,
+      "incorporation_state": null,
+      "incorporation_city": null
+    },
+    "order_status": "issued",
+    "validations": null,
+    "order_amount": "$30.00",
+    "external_order_number": "individual-guide-mailbox-1",
+    "certificate_url": "https://sandbox.ssl.com/team/YOUR_TEAM/certificate_orders/co-cb1lg19qlff",
+    "receipt_url": "https://sandbox.ssl.com/team/YOUR_TEAM/orders/4d38-1lg19ql",
+    "smart_seal_url": "https://sandbox.ssl.com/team/YOUR_TEAM/certificate_orders/co-cb1lg19qlff/site_seal",
+    "validation_url": "https://sandbox.ssl.com/team/YOUR_TEAM/certificate_orders/co-cb1lg19qlff/validation",
+    "certificates": "-----BEGIN CERTIFICATE-----\nMIIDcTCCAvegAwIBAgIQGeFq...(shortened)\n-----END CERTIFICATE-----\n\n-----BEGIN CERTIFICATE-----\nMIIDqTCCAy+gAwIBAgIQVnuC...(shortened)\n-----END CERTIFICATE-----\n\n-----BEGIN CERTIFICATE-----\nMIICrTCCAjKgAwIBAgIIPTUU...(shortened)\n-----END CERTIFICATE-----\n",
+    "certificate_contents": {
+      "ref": "co-cb1lg19qlff-0"
+    }
+  }
+}

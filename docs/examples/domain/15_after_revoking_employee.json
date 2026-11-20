@@ -1,0 +1,89 @@
+{
+  "method": "GET",
+  "path": "/certificate/co-171lg19oh9a",
+  "query": {
+    "response_type": "individually",
+    "response_encoding": "base64",
+    "account_key": "YOUR_ACCOUNT_KEY",
+    "secret_key": "YOUR_SECRET_KEY"
+  },
+  "json": null,
+  "status": 200,
+  "elapsed_seconds": 0.17,
+  "response": {
+    "description": "1 Year Personal Basic",
+    "product": "300",
+    "product_name": "personal-basic",
+    "order_status": "revoked",
+    "order_date": "2026-11-20T14:01:21.000-06:00",
+    "registrant": {
+      "organization": null,
+      "organization_unit": null,
+      "street_address_1": null,
+      "street_address_2": null,
+      "street_address_3": null,
+      "locality": "Houston",
+      "state_or_province": "Texas",
+      "post_office_box": null,
+      "postal_code": null,
+      "country": null,
+      "email": "bob@smimedemo-globex.sslcom.link",
+      "assumed_name": null,
+      "company_number": null,
+      "business_category": null,
+      "organization_identifier": null,
+      "duns_number": null,
+      "incorporation_country": null,
+      "incorporation_date": null,
+      "incorporation_state": null,
+      "incorporation_city": null
+    },
+    "special_fields": null,
+    "certificates": "-----BEGIN CERTIFICATE-----\nMIIDjjCCAxOgAwIBAgIQPwXB...(shortened)\n-----END CERTIFICATE-----\n-----BEGIN CERTIFICATE-----\nMIIDqTCCAy+gAwIBAgIQVnuC...(shortened)\n-----END CERTIFICATE-----\n-----BEGIN CERTIFICATE-----\nMIICrTCCAjKgAwIBAgIIPTUU...(shortened)\n-----END CERTIFICATE-----\n",
+    "common_name": null,
+    "serial_number": "3f05c1bdbc5f7ba34fbde5baa662a760",
+    "domains_qty_purchased": "2",
+    "wildcard_qty_purchased": "0",
+    "subject_alternative_names": [],
+    "validations": {
+      "smimedemo-globex.sslcom.link": {
+        "method": "cname_csr_hash",
+        "status": "satisfied",
+        "validated_at": "2026-11-20T13:59:55.000-06:00"
+      },
+      "bob@smimedemo-globex.sslcom.link": {
+        "method": null,
+        "status": "not yet started"
+      }
+    },
+    "effective_date": "2026-11-20T13:51:28.000-06:00",
+    "expiration_date": "2027-11-19T13:51:28.000-06:00",
+    "algorithm": "SHA1",
+    "external_order_number": "globex-bob",
+    "domains": [
+      "smimedemo-globex.sslcom.link",
+      "bob@smimedemo-globex.sslcom.link"
+    ],
+    "site_seal_code": null,
+    "subscriber_agreement": null,
+    "server_software": 1,
+    "contacts": [],
+    "authorized_users": {
+      "contract_signer": {},
+      "contract_requestor": {},
+      "contract_approver": {}
+    },
+    "end_entity_certificates": [
+      {
+        "certificate": "-----BEGIN CERTIFICATE-----\nMIIDjTCCAxOgAwIBAgIQe1Um...(shortened)\n-----END CERTIFICATE-----\n-----BEGIN CERTIFICATE-----\nMIIDqTCCAy+gAwIBAgIQVnuC...(shortened)\n-----END CERTIFICATE-----\n-----BEGIN CERTIFICATE-----\nMIICrTCCAjKgAwIBAgIIPTUU...(shortened)\n-----END CERTIFICATE-----\n",
+        "serial": "7b552613d974a15c0fe12171f3168425",
+        "status": "revoked"
+      },
+      {
+        "certificate": "-----BEGIN CERTIFICATE-----\nMIIDjjCCAxOgAwIBAgIQPwXB...(shortened)\n-----END CERTIFICATE-----\n-----BEGIN CERTIFICATE-----\nMIIDqTCCAy+gAwIBAgIQVnuC...(shortened)\n-----END CERTIFICATE-----\n-----BEGIN CERTIFICATE-----\nMIICrTCCAjKgAwIBAgIIPTUU...(shortened)\n-----END CERTIFICATE-----\n",
+        "serial": "3f05c1bdbc5f7ba34fbde5baa662a760",
+        "status": "revoked"
+      }
+    ]
+  }
+}

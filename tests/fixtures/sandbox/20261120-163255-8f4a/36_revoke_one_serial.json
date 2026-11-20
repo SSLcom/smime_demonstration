@@ -1,0 +1,27 @@
+{
+  "step": "revoke_one_serial",
+  "recorded_at": "2026-11-20T16:46:22+00:00",
+  "request": {
+    "method": "DELETE",
+    "path": "/certificate/co-671lg0u8oaf",
+    "auth_placement": "query",
+    "query": {
+      "reason": "mistake",
+      "serials": "[\"26:93:61:50:a3:f6:a8:3a:e6:71:57:8b:e6:18:d7:66\"]",
+      "account_key": "REDACTED",
+      "secret_key": "REDACTED"
+    },
+    "json": null
+  },
+  "response": {
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body": {
+      "errors": {
+        "reason": [
+          "needs to be one of the following: UNSPECIFIED, CESSATIONOFOPERATION, AFFILIATIONCHANGED, AFFILIATIONCHANGED, SUPERSEDED, SUPERSEDED, KEYCOMPROMISE"
+        ]
+      }
+    }
+  }
+}

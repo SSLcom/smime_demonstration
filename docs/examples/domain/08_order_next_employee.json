@@ -1,0 +1,59 @@
+{
+  "method": "POST",
+  "path": "/certificates",
+  "query": {
+    "account_key": "YOUR_ACCOUNT_KEY",
+    "secret_key": "YOUR_SECRET_KEY"
+  },
+  "json": {
+    "product": 300,
+    "period": 365,
+    "email_address": "bob@smimedemo-globex.sslcom.link",
+    "recipient": {
+      "email": "bob@smimedemo-globex.sslcom.link"
+    },
+    "external_order_number": "globex-bob",
+    "csr": "-----BEGIN CERTIFICATE REQUEST-----\nMIIBJDCBywIBADArMSkwJwYD...(shortened)\n-----END CERTIFICATE REQUEST-----\n",
+    "locality": "Houston",
+    "state_or_province": "Texas"
+  },
+  "status": 200,
+  "elapsed_seconds": 1.96,
+  "response": {
+    "ref": "co-171lg19oh9a",
+    "registrant": {
+      "organization": null,
+      "organization_unit": null,
+      "street_address_1": null,
+      "street_address_2": null,
+      "street_address_3": null,
+      "locality": "Houston",
+      "state_or_province": "Texas",
+      "post_office_box": null,
+      "postal_code": null,
+      "country": null,
+      "email": "bob@smimedemo-globex.sslcom.link",
+      "assumed_name": null,
+      "company_number": null,
+      "business_category": null,
+      "organization_identifier": null,
+      "duns_number": null,
+      "incorporation_country": null,
+      "incorporation_date": null,
+      "incorporation_state": null,
+      "incorporation_city": null
+    },
+    "order_status": "validating, please wait",
+    "validations": null,
+    "order_amount": "$30.00",
+    "external_order_number": "globex-bob",
+    "certificate_url": "https://sandbox.ssl.com/team/YOUR_TEAM/certificate_orders/co-171lg19oh9a",
+    "receipt_url": "https://sandbox.ssl.com/team/YOUR_TEAM/orders/5a96-1lg19oh",
+    "smart_seal_url": "https://sandbox.ssl.com/team/YOUR_TEAM/certificate_orders/co-171lg19oh9a/site_seal",
+    "validation_url": "https://sandbox.ssl.com/team/YOUR_TEAM/certificate_orders/co-171lg19oh9a/validation",
+    "certificates": null,
+    "certificate_contents": {
+      "ref": "co-171lg19oh9a-0"
+    }
+  }
+}

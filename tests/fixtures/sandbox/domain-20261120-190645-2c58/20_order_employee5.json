@@ -1,0 +1,66 @@
+{
+  "step": "order_employee5",
+  "recorded_at": "2026-11-20T19:21:16+00:00",
+  "request": {
+    "method": "POST",
+    "path": "/certificates",
+    "auth_placement": "query",
+    "query": {
+      "account_key": "REDACTED",
+      "secret_key": "REDACTED"
+    },
+    "json": {
+      "product": 300,
+      "period": 365,
+      "email_address": "employee5@smimedemo.sslcom.link",
+      "external_order_number": "probe-domain-20261120-190645-2c58-employee5",
+      "csr": "<CSR redacted>",
+      "locality": "Houston",
+      "state_or_province": "Texas",
+      "recipient": {
+        "email": "employee5@smimedemo.sslcom.link"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body": {
+      "ref": "co-5e1lg17db90",
+      "registrant": {
+        "organization": null,
+        "organization_unit": null,
+        "street_address_1": null,
+        "street_address_2": null,
+        "street_address_3": null,
+        "locality": "Houston",
+        "state_or_province": "Texas",
+        "post_office_box": null,
+        "postal_code": null,
+        "country": null,
+        "email": "employee5@smimedemo.sslcom.link",
+        "assumed_name": null,
+        "company_number": null,
+        "business_category": null,
+        "organization_identifier": null,
+        "duns_number": null,
+        "incorporation_country": null,
+        "incorporation_date": null,
+        "incorporation_state": null,
+        "incorporation_city": null
+      },
+      "order_status": "validating, please wait",
+      "validations": null,
+      "order_amount": "$30.00",
+      "external_order_number": "probe-domain-20261120-190645-2c58-employee5",
+      "certificate_url": "https://sandbox.ssl.com/team/TEAM/certificate_orders/co-5e1lg17db90",
+      "receipt_url": "https://sandbox.ssl.com/team/TEAM/orders/63a6-1lg17dc",
+      "smart_seal_url": "https://sandbox.ssl.com/team/TEAM/certificate_orders/co-5e1lg17db90/site_seal",
+      "validation_url": "https://sandbox.ssl.com/team/TEAM/certificate_orders/co-5e1lg17db90/validation",
+      "certificates": null,
+      "certificate_contents": {
+        "ref": "co-5e1lg17db90-0"
+      }
+    }
+  }
+}

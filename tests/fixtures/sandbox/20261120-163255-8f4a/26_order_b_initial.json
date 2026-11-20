@@ -1,0 +1,79 @@
+{
+  "step": "order_b_initial",
+  "recorded_at": "2026-11-20T16:45:13+00:00",
+  "request": {
+    "method": "GET",
+    "path": "/certificate/co-671lg0u8oaf",
+    "auth_placement": "query",
+    "query": {
+      "response_type": "individually",
+      "response_encoding": "base64",
+      "account_key": "REDACTED",
+      "secret_key": "REDACTED"
+    },
+    "json": null
+  },
+  "response": {
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body": {
+      "description": "1 Year Personal Basic",
+      "product": "300",
+      "product_name": "personal-basic",
+      "order_status": "validating, please wait",
+      "order_date": "2026-11-20T10:45:12.000-06:00",
+      "registrant": {
+        "organization": null,
+        "organization_unit": null,
+        "street_address_1": null,
+        "street_address_2": null,
+        "street_address_3": null,
+        "locality": null,
+        "state_or_province": null,
+        "post_office_box": null,
+        "postal_code": null,
+        "country": null,
+        "email": "mailbox@example.com",
+        "assumed_name": null,
+        "company_number": null,
+        "business_category": null,
+        "organization_identifier": null,
+        "duns_number": null,
+        "incorporation_country": null,
+        "incorporation_date": null,
+        "incorporation_state": null,
+        "incorporation_city": null
+      },
+      "special_fields": null,
+      "certificates": null,
+      "common_name": null,
+      "serial_number": null,
+      "domains_qty_purchased": "1",
+      "wildcard_qty_purchased": "0",
+      "subject_alternative_names": null,
+      "validations": {
+        "example.com": {
+          "method": null,
+          "status": "not yet started"
+        }
+      },
+      "effective_date": null,
+      "expiration_date": null,
+      "algorithm": null,
+      "external_order_number": "probe-20261120-163255-8f4a-order_b",
+      "domains": [
+        "example.com"
+      ],
+      "site_seal_code": null,
+      "subscriber_agreement": null,
+      "server_software": 1,
+      "contacts": [],
+      "authorized_users": {
+        "contract_signer": {},
+        "contract_requestor": {},
+        "contract_approver": {}
+      },
+      "end_entity_certificates": null
+    }
+  }
+}

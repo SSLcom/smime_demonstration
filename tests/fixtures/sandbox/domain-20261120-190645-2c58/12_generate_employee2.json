@@ -1,0 +1,26 @@
+{
+  "step": "generate_employee2",
+  "recorded_at": "2026-11-20T19:10:18+00:00",
+  "request": {
+    "method": "POST",
+    "path": "/generate_certificate",
+    "auth_placement": "query",
+    "query": {
+      "account_key": "REDACTED",
+      "secret_key": "REDACTED"
+    },
+    "json": {
+      "ref": "co-c01lg16oi18",
+      "csr": "<CSR redacted>"
+    }
+  },
+  "response": {
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body": {
+      "cert_results": null,
+      "cert_common_name": null,
+      "error_message": null
+    }
+  }
+}

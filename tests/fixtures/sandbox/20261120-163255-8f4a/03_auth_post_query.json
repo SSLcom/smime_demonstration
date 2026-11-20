@@ -1,0 +1,30 @@
+{
+  "step": "auth_post_query",
+  "recorded_at": "2026-11-20T16:32:55+00:00",
+  "request": {
+    "method": "POST",
+    "path": "/certificates",
+    "auth_placement": "query",
+    "query": {
+      "account_key": "REDACTED",
+      "secret_key": "REDACTED"
+    },
+    "json": {
+      "product": 0
+    }
+  },
+  "response": {
+    "status": 400,
+    "content_type": "application/json; charset=utf-8",
+    "body": {
+      "response_type": "ERROR",
+      "response_code": 400,
+      "message": {
+        "product": [
+          "is invalid",
+          "needs to one of the following: 100, 101, 102, 103, 104, 105, 106, 107, 204, 202, 203, 200, 201, 300, 301, 302, 303, 310, 350, 360, 400, 450, 500, 550, 600, 700, 800, 900, 1000, 1100, 1200, 1201, 1202, 1300, 1301, 1302, 1400, 1401"
+        ]
+      }
+    }
+  }
+}

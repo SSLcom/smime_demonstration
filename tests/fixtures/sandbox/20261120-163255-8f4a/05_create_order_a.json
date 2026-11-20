@@ -1,0 +1,41 @@
+{
+  "step": "create_order_a",
+  "recorded_at": "2026-11-20T16:32:56+00:00",
+  "request": {
+    "method": "POST",
+    "path": "/certificates",
+    "auth_placement": "query",
+    "query": {
+      "account_key": "REDACTED",
+      "secret_key": "REDACTED"
+    },
+    "json": {
+      "product": 300,
+      "period": 365,
+      "external_order_number": "probe-20261120-163255-8f4a-order_a",
+      "email_address": "mailbox@example.com",
+      "csr": "<CSR redacted>"
+    }
+  },
+  "response": {
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body": {
+      "ref": "co-041lg0thnaa",
+      "registrant": null,
+      "order_status": "waiting on registrant information from customer",
+      "validations": null,
+      "order_amount": "$30.00",
+      "external_order_number": "probe-20261120-163255-8f4a-order_a",
+      "certificate_url": "https://sandbox.ssl.com/team/TEAM/certificate_orders/co-041lg0thnaa",
+      "receipt_url": "https://sandbox.ssl.com/team/TEAM/orders/d2de-1lg0tho",
+      "smart_seal_url": "https://sandbox.ssl.com/team/TEAM/certificate_orders/co-041lg0thnaa/site_seal",
+      "validation_url": "https://sandbox.ssl.com/team/TEAM/certificate_orders/co-041lg0thnaa/validation",
+      "certificates": null,
+      "certificate_contents": {
+        "ref": "co-041lg0thnaa-0"
+      },
+      "recipient_notice": "This order has no recipient assigned. This product cannot be issued without one \u2014 add a recipient in the SSL.com portal to continue."
+    }
+  }
+}

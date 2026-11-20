@@ -1,0 +1,90 @@
+{
+  "step": "order_b_issue_result",
+  "recorded_at": "2026-11-20T16:46:21+00:00",
+  "request": {
+    "method": "GET",
+    "path": "/certificate/co-671lg0u8oaf",
+    "auth_placement": "query",
+    "query": {
+      "response_type": "individually",
+      "response_encoding": "base64",
+      "account_key": "REDACTED",
+      "secret_key": "REDACTED"
+    },
+    "json": null
+  },
+  "response": {
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body": {
+      "description": "1 Year Personal Basic",
+      "product": "300",
+      "product_name": "personal-basic",
+      "order_status": "issued",
+      "order_date": "2026-11-20T10:45:12.000-06:00",
+      "registrant": {
+        "organization": null,
+        "organization_unit": null,
+        "street_address_1": null,
+        "street_address_2": null,
+        "street_address_3": null,
+        "locality": null,
+        "state_or_province": null,
+        "post_office_box": null,
+        "postal_code": null,
+        "country": null,
+        "email": "mailbox@example.com",
+        "assumed_name": null,
+        "company_number": null,
+        "business_category": null,
+        "organization_identifier": null,
+        "duns_number": null,
+        "incorporation_country": null,
+        "incorporation_date": null,
+        "incorporation_state": null,
+        "incorporation_city": null
+      },
+      "special_fields": null,
+      "certificates": "<end-entity certificate redacted, serial 26:93:61:50:a3:f6:a8:3a:e6:71:57:8b:e6:18:d7:66>\n-----BEGIN CERTIFICATE-----\nMIIDqTCCAy+gAwIBAgIQVnuC3qX5JbG/CzEZ7SezvzAKBggqhkjOPQQDAzCBijEL\nMAkGA1UEBhMCVVMxDjAMBgNVBAgMBVRleGFzMRAwDgYDVQQHDAdIb3VzdG9uMRgw\nFgYDVQQKDA9TU0wgQ29ycG9yYXRpb24xPzA9BgNVBAMMNlNTTC5jb20gUm9vdCBD\nZXJ0aWZpY2F0aW9uIEF1dGhvcml0eSBFQ0MgLSBEZXZlbG9wbWVudDAeFw0yMDEx\nMTgwNzI2NDFaFw0zNTExMTUwNzI2NDBaMH4xCzAJBgNVBAYTAlVTMQ4wDAYDVQQI\nDAVUZXhhczEQMA4GA1UEBwwHSG91c3RvbjERMA8GA1UECgwIU1NMIENvcnAxOjA4\nBgNVBAMMMVNTTC5jb20gQ2xpZW50IENlcnRpZmljYXRlIEludGVybWVkaWF0ZSBD\nQSBFQ0MgUjIwdjAQBgcqhkjOPQIBBgUrgQQAIgNiAASAtjS2CATERIkFho5UBKBx\n4ogYt0Bx/rTT9EUdf0FuOserCKxILI2OONjCh0vc0IfsiGKQazO/gl1jUrfqZvC1\nNRMwk8DgbZDZLJ1gYIE1KTpjkM9cNArg/KY+Yj0+L1CjggFjMIIBXzASBgNVHRMB\nAf8ECDAGAQH/AgEAMB8GA1UdIwQYMBaAFNGf8jzLwbrnDtXAG1nKowSoN0/0MHUG\nCCsGAQUFBwEBBGkwZzBABggrBgEFBQcwAoY0aHR0cDovL2NlcnQtZGV2LnNzbC5j\nb20vU1NMY29tLVJvb3RDQS1FQ0MtMzg0LVIxLmNlcjAjBggrBgEFBQcwAYYXaHR0\ncDovL29jc3AtZGV2LnNzbC5jb20wEQYDVR0gBAowCDAGBgRVHSAAMCkGA1UdJQQi\nMCAGCCsGAQUFBwMCBggrBgEFBQcDBAYKKwYBBAGCNwoDDDBEBgNVHR8EPTA7MDmg\nN6A1hjNodHRwOi8vY3JsLWRldi5zc2wuY29tL1NTTGNvbS1Sb290Q0EtRUNDLTM4\nNC1SMS5jcmwwHQYDVR0OBBYEFEh95xzVx5PawUlyhhQq24l9DDx+MA4GA1UdDwEB\n/wQEAwIBhjAKBggqhkjOPQQDAwNoADBlAjEA8C5ExMCZ893g7IwUhzN5fZOy3Fc4\nL5soId3sLAzUNBGEk6wLbyOlm+XpARKYcAChAjBsFyJcdNntozZ5w/6K4yYWLhwX\nJ2SKJOb4xwf+qchbSAUOhlAfZWlAW2IVKN+EMxY=\n-----END CERTIFICATE-----\n-----BEGIN CERTIFICATE-----\nMIICrTCCAjKgAwIBAgIIPTUUQYYpZ4kwCgYIKoZIzj0EAwIwgYoxCzAJBgNVBAYT\nAlVTMQ4wDAYDVQQIDAVUZXhhczEQMA4GA1UEBwwHSG91c3RvbjEYMBYGA1UECgwP\nU1NMIENvcnBvcmF0aW9uMT8wPQYDVQQDDDZTU0wuY29tIFJvb3QgQ2VydGlmaWNh\ndGlvbiBBdXRob3JpdHkgRUNDIC0gRGV2ZWxvcG1lbnQwHhcNMTgwMTE2MTIyMDM5\nWhcNNDMwMTE3MTIyMDM5WjCBijELMAkGA1UEBhMCVVMxDjAMBgNVBAgMBVRleGFz\nMRAwDgYDVQQHDAdIb3VzdG9uMRgwFgYDVQQKDA9TU0wgQ29ycG9yYXRpb24xPzA9\nBgNVBAMMNlNTTC5jb20gUm9vdCBDZXJ0aWZpY2F0aW9uIEF1dGhvcml0eSBFQ0Mg\nLSBEZXZlbG9wbWVudDB2MBAGByqGSM49AgEGBSuBBAAiA2IABLDLv8wpi4NWg+9b\nvVJCYatkdkE7liC4wVVHpSBgLt5WXmjEbAsXFZezWK4hwTUvAeu3p3J6YFBZxg64\nud7EfaOVAlZ1k7u8iyUcZduBj1mGhffuJ4L2HvlCQZq+Um++C6NjMGEwDwYDVR0T\nAQH/BAUwAwEB/zAfBgNVHSMEGDAWgBTRn/I8y8G65w7VwBtZyqMEqDdP9DAdBgNV\nHQ4EFgQU0Z/yPMvBuucO1cAbWcqjBKg3T/QwDgYDVR0PAQH/BAQDAgGGMAoGCCqG\nSM49BAMCA2kAMGYCMQDrJEXrCR9LDKPlfOHWmM6fSLHgitRMmsx+mKm6A4+1cDYJ\nROWujr0mwO9meXNOctkCMQCGnzeVns8rSREaIMmHWMBjOHRhTIwFfu70h2KzKL0H\nASABMsXFisrzUnahnjqpAzE=\n-----END CERTIFICATE-----\n",
+      "common_name": null,
+      "serial_number": "26936150a3f6a83ae671578be618d766",
+      "domains_qty_purchased": "2",
+      "wildcard_qty_purchased": "0",
+      "subject_alternative_names": [],
+      "validations": {
+        "example.com": {
+          "method": null,
+          "status": "not yet started"
+        },
+        "mailbox@example.com": {
+          "method": null,
+          "status": "not yet started"
+        }
+      },
+      "effective_date": "2026-11-20T10:36:18.000-06:00",
+      "expiration_date": "2027-11-20T10:36:18.000-06:00",
+      "algorithm": "SHA1",
+      "external_order_number": "probe-20261120-163255-8f4a-order_b",
+      "domains": [
+        "example.com",
+        "mailbox@example.com"
+      ],
+      "site_seal_code": null,
+      "subscriber_agreement": null,
+      "server_software": 1,
+      "contacts": [],
+      "authorized_users": {
+        "contract_signer": {},
+        "contract_requestor": {},
+        "contract_approver": {}
+      },
+      "end_entity_certificates": [
+        {
+          "certificate": "<end-entity certificate redacted, serial 26:93:61:50:a3:f6:a8:3a:e6:71:57:8b:e6:18:d7:66>\n-----BEGIN CERTIFICATE-----\nMIIDqTCCAy+gAwIBAgIQVnuC3qX5JbG/CzEZ7SezvzAKBggqhkjOPQQDAzCBijEL\nMAkGA1UEBhMCVVMxDjAMBgNVBAgMBVRleGFzMRAwDgYDVQQHDAdIb3VzdG9uMRgw\nFgYDVQQKDA9TU0wgQ29ycG9yYXRpb24xPzA9BgNVBAMMNlNTTC5jb20gUm9vdCBD\nZXJ0aWZpY2F0aW9uIEF1dGhvcml0eSBFQ0MgLSBEZXZlbG9wbWVudDAeFw0yMDEx\nMTgwNzI2NDFaFw0zNTExMTUwNzI2NDBaMH4xCzAJBgNVBAYTAlVTMQ4wDAYDVQQI\nDAVUZXhhczEQMA4GA1UEBwwHSG91c3RvbjERMA8GA1UECgwIU1NMIENvcnAxOjA4\nBgNVBAMMMVNTTC5jb20gQ2xpZW50IENlcnRpZmljYXRlIEludGVybWVkaWF0ZSBD\nQSBFQ0MgUjIwdjAQBgcqhkjOPQIBBgUrgQQAIgNiAASAtjS2CATERIkFho5UBKBx\n4ogYt0Bx/rTT9EUdf0FuOserCKxILI2OONjCh0vc0IfsiGKQazO/gl1jUrfqZvC1\nNRMwk8DgbZDZLJ1gYIE1KTpjkM9cNArg/KY+Yj0+L1CjggFjMIIBXzASBgNVHRMB\nAf8ECDAGAQH/AgEAMB8GA1UdIwQYMBaAFNGf8jzLwbrnDtXAG1nKowSoN0/0MHUG\nCCsGAQUFBwEBBGkwZzBABggrBgEFBQcwAoY0aHR0cDovL2NlcnQtZGV2LnNzbC5j\nb20vU1NMY29tLVJvb3RDQS1FQ0MtMzg0LVIxLmNlcjAjBggrBgEFBQcwAYYXaHR0\ncDovL29jc3AtZGV2LnNzbC5jb20wEQYDVR0gBAowCDAGBgRVHSAAMCkGA1UdJQQi\nMCAGCCsGAQUFBwMCBggrBgEFBQcDBAYKKwYBBAGCNwoDDDBEBgNVHR8EPTA7MDmg\nN6A1hjNodHRwOi8vY3JsLWRldi5zc2wuY29tL1NTTGNvbS1Sb290Q0EtRUNDLTM4\nNC1SMS5jcmwwHQYDVR0OBBYEFEh95xzVx5PawUlyhhQq24l9DDx+MA4GA1UdDwEB\n/wQEAwIBhjAKBggqhkjOPQQDAwNoADBlAjEA8C5ExMCZ893g7IwUhzN5fZOy3Fc4\nL5soId3sLAzUNBGEk6wLbyOlm+XpARKYcAChAjBsFyJcdNntozZ5w/6K4yYWLhwX\nJ2SKJOb4xwf+qchbSAUOhlAfZWlAW2IVKN+EMxY=\n-----END CERTIFICATE-----\n-----BEGIN CERTIFICATE-----\nMIICrTCCAjKgAwIBAgIIPTUUQYYpZ4kwCgYIKoZIzj0EAwIwgYoxCzAJBgNVBAYT\nAlVTMQ4wDAYDVQQIDAVUZXhhczEQMA4GA1UEBwwHSG91c3RvbjEYMBYGA1UECgwP\nU1NMIENvcnBvcmF0aW9uMT8wPQYDVQQDDDZTU0wuY29tIFJvb3QgQ2VydGlmaWNh\ndGlvbiBBdXRob3JpdHkgRUNDIC0gRGV2ZWxvcG1lbnQwHhcNMTgwMTE2MTIyMDM5\nWhcNNDMwMTE3MTIyMDM5WjCBijELMAkGA1UEBhMCVVMxDjAMBgNVBAgMBVRleGFz\nMRAwDgYDVQQHDAdIb3VzdG9uMRgwFgYDVQQKDA9TU0wgQ29ycG9yYXRpb24xPzA9\nBgNVBAMMNlNTTC5jb20gUm9vdCBDZXJ0aWZpY2F0aW9uIEF1dGhvcml0eSBFQ0Mg\nLSBEZXZlbG9wbWVudDB2MBAGByqGSM49AgEGBSuBBAAiA2IABLDLv8wpi4NWg+9b\nvVJCYatkdkE7liC4wVVHpSBgLt5WXmjEbAsXFZezWK4hwTUvAeu3p3J6YFBZxg64\nud7EfaOVAlZ1k7u8iyUcZduBj1mGhffuJ4L2HvlCQZq+Um++C6NjMGEwDwYDVR0T\nAQH/BAUwAwEB/zAfBgNVHSMEGDAWgBTRn/I8y8G65w7VwBtZyqMEqDdP9DAdBgNV\nHQ4EFgQU0Z/yPMvBuucO1cAbWcqjBKg3T/QwDgYDVR0PAQH/BAQDAgGGMAoGCCqG\nSM49BAMCA2kAMGYCMQDrJEXrCR9LDKPlfOHWmM6fSLHgitRMmsx+mKm6A4+1cDYJ\nROWujr0mwO9meXNOctkCMQCGnzeVns8rSREaIMmHWMBjOHRhTIwFfu70h2KzKL0H\nASABMsXFisrzUnahnjqpAzE=\n-----END CERTIFICATE-----\n",
+          "serial": "26936150a3f6a83ae671578be618d766",
+          "status": "issued"
+        }
+      ]
+    }
+  }
+}

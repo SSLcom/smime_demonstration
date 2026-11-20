@@ -1,0 +1,30 @@
+{
+  "step": "api_parameters_create_w_csr",
+  "recorded_at": "2026-11-20T16:32:57+00:00",
+  "request": {
+    "method": "GET",
+    "path": "/certificate/co-041lg0thnaa/api_parameters/create_w_csr",
+    "auth_placement": "query",
+    "query": {
+      "account_key": "REDACTED",
+      "secret_key": "REDACTED"
+    },
+    "json": null
+  },
+  "response": {
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body": {
+      "parameters": {
+        "account_key": "REDACTED",
+        "secret_key": "REDACTED",
+        "product": "300",
+        "period": "365",
+        "server_software": "1",
+        "domains": {},
+        "contacts": {},
+        "csr": "<CSR redacted>"
+      }
+    }
+  }
+}

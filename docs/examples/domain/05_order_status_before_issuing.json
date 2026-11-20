@@ -1,0 +1,78 @@
+{
+  "method": "GET",
+  "path": "/certificate/co-7f1lg19kfaa",
+  "query": {
+    "response_type": "individually",
+    "response_encoding": "base64",
+    "account_key": "YOUR_ACCOUNT_KEY",
+    "secret_key": "YOUR_SECRET_KEY"
+  },
+  "json": null,
+  "status": 200,
+  "elapsed_seconds": 0.84,
+  "response": {
+    "description": "1 Year Personal Basic",
+    "product": "300",
+    "product_name": "personal-basic",
+    "order_status": "validating, please wait",
+    "order_date": "2026-11-20T13:59:11.000-06:00",
+    "registrant": {
+      "organization": null,
+      "organization_unit": null,
+      "street_address_1": null,
+      "street_address_2": null,
+      "street_address_3": null,
+      "locality": "Houston",
+      "state_or_province": "Texas",
+      "post_office_box": null,
+      "postal_code": null,
+      "country": null,
+      "email": "alice@smimedemo-globex.sslcom.link",
+      "assumed_name": null,
+      "company_number": null,
+      "business_category": null,
+      "organization_identifier": null,
+      "duns_number": null,
+      "incorporation_country": null,
+      "incorporation_date": null,
+      "incorporation_state": null,
+      "incorporation_city": null
+    },
+    "special_fields": null,
+    "certificates": null,
+    "common_name": "alice@smimedemo-globex.sslcom.link",
+    "serial_number": null,
+    "domains_qty_purchased": "2",
+    "wildcard_qty_purchased": "0",
+    "subject_alternative_names": null,
+    "validations": {
+      "smimedemo-globex.sslcom.link": {
+        "method": "cname_csr_hash",
+        "status": "satisfied",
+        "validated_at": "2026-11-20T13:59:55.000-06:00"
+      },
+      "alice@smimedemo-globex.sslcom.link": {
+        "method": null,
+        "status": "not yet started"
+      }
+    },
+    "effective_date": null,
+    "expiration_date": null,
+    "algorithm": null,
+    "external_order_number": "globex-alice",
+    "domains": [
+      "smimedemo-globex.sslcom.link",
+      "alice@smimedemo-globex.sslcom.link"
+    ],
+    "site_seal_code": null,
+    "subscriber_agreement": null,
+    "server_software": 1,
+    "contacts": [],
+    "authorized_users": {
+      "contract_signer": {},
+      "contract_requestor": {},
+      "contract_approver": {}
+    },
+    "end_entity_certificates": null
+  }
+}

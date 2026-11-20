@@ -1,0 +1,21 @@
+{
+  "step": "search_external_id",
+  "recorded_at": "2026-11-20T16:32:56+00:00",
+  "request": {
+    "method": "GET",
+    "path": "/certificates",
+    "auth_placement": "query",
+    "query": {
+      "search": "probe-20261120-163255-8f4a-order_a",
+      "per_page": 5,
+      "account_key": "REDACTED",
+      "secret_key": "REDACTED"
+    },
+    "json": null
+  },
+  "response": {
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body": []
+  }
+}

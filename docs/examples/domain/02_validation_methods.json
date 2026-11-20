@@ -1,0 +1,56 @@
+{
+  "method": "GET",
+  "path": "/certificate/co-7f1lg19kfaa/validations/methods",
+  "query": {
+    "account_key": "YOUR_ACCOUNT_KEY",
+    "secret_key": "YOUR_SECRET_KEY"
+  },
+  "json": null,
+  "status": 200,
+  "elapsed_seconds": 0.28,
+  "response": {
+    "instructions": "https://www.ssl.com/faqs/ssl-dv-validation-requirements/",
+    "md5_hash": "2E1BFB721414C711774D13926FB863F1",
+    "sha2_hash": "AFDB9CCD66973741636D168E5A35979D305F2D815549E936A8653F9B70327B79",
+    "dns_sha2_hash": "AFDB9CCD66973741636D168E5A35979D.305F2D815549E936A8653F9B70327B79.20261120",
+    "dcv_methods": {
+      "smimedemo-globex.sslcom.link": {
+        "email_addresses": [
+          "admin@sslcom.link",
+          "administrator@sslcom.link",
+          "webmaster@sslcom.link",
+          "hostmaster@sslcom.link",
+          "postmaster@sslcom.link",
+          "admin@smimedemo-globex.sslcom.link",
+          "administrator@smimedemo-globex.sslcom.link",
+          "webmaster@smimedemo-globex.sslcom.link",
+          "hostmaster@smimedemo-globex.sslcom.link",
+          "postmaster@smimedemo-globex.sslcom.link"
+        ],
+        "http_csr_hash": {
+          "http": "http://smimedemo-globex.sslcom.link/.well-known/pki-validation/2E1BFB721414C711774D13926FB863F1.txt",
+          "allow_https": "true",
+          "contents": "AFDB9CCD66973741636D168E5A35979D305F2D815549E936A8653F9B70327B79\nssl.com\n20261120"
+        },
+        "cname_csr_hash": {
+          "cname": "_2E1BFB721414C711774D13926FB863F1.smimedemo-globex.sslcom.link. CNAME AFDB9CCD66973741636D168E5A35979D.305F2D815549E936A8653F9B70327B79.20261120.ssl.com",
+          "name": "_2E1BFB721414C711774D13926FB863F1.smimedemo-globex.sslcom.link",
+          "value": "AFDB9CCD66973741636D168E5A35979D.305F2D815549E936A8653F9B70327B79.20261120.ssl.com"
+        }
+      },
+      "alice@smimedemo-globex.sslcom.link": {
+        "http_csr_hash": {
+          "http": "http://alice@smimedemo-globex.sslcom.link/.well-known/pki-validation/2E1BFB721414C711774D13926FB863F1.txt",
+          "allow_https": "true",
+          "contents": "AFDB9CCD66973741636D168E5A35979D305F2D815549E936A8653F9B70327B79\nssl.com\n20261120"
+        },
+        "cname_csr_hash": {
+          "cname": "_2E1BFB721414C711774D13926FB863F1.alice@smimedemo-globex.sslcom.link. CNAME AFDB9CCD66973741636D168E5A35979D.305F2D815549E936A8653F9B70327B79.20261120.ssl.com",
+          "name": "_2E1BFB721414C711774D13926FB863F1.alice@smimedemo-globex.sslcom.link",
+          "value": "AFDB9CCD66973741636D168E5A35979D.305F2D815549E936A8653F9B70327B79.20261120.ssl.com"
+        }
+      }
+    },
+    "ca_tag": "ssl.com"
+  }
+}

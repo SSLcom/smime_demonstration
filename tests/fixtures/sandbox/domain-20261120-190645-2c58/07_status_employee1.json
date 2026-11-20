@@ -1,0 +1,83 @@
+{
+  "step": "status_employee1",
+  "recorded_at": "2026-11-20T19:08:58+00:00",
+  "request": {
+    "method": "GET",
+    "path": "/certificate/co-ce1lg16i624",
+    "auth_placement": "query",
+    "query": {
+      "account_key": "REDACTED",
+      "secret_key": "REDACTED"
+    },
+    "json": null
+  },
+  "response": {
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body": {
+      "description": "1 Year Personal Basic",
+      "product": "300",
+      "product_name": "personal-basic",
+      "order_status": "validated",
+      "order_date": "2026-11-20T13:06:46.000-06:00",
+      "registrant": {
+        "organization": null,
+        "organization_unit": null,
+        "street_address_1": null,
+        "street_address_2": null,
+        "street_address_3": null,
+        "locality": null,
+        "state_or_province": null,
+        "post_office_box": null,
+        "postal_code": null,
+        "country": null,
+        "email": "employee1@smimedemo.sslcom.link",
+        "assumed_name": null,
+        "company_number": null,
+        "business_category": null,
+        "organization_identifier": null,
+        "duns_number": null,
+        "incorporation_country": null,
+        "incorporation_date": null,
+        "incorporation_state": null,
+        "incorporation_city": null
+      },
+      "special_fields": null,
+      "certificates": null,
+      "common_name": "employee1@smimedemo.sslcom.link",
+      "serial_number": null,
+      "domains_qty_purchased": "2",
+      "wildcard_qty_purchased": "0",
+      "subject_alternative_names": null,
+      "validations": {
+        "smimedemo.sslcom.link": {
+          "method": "cname_csr_hash",
+          "status": "satisfied",
+          "validated_at": "2026-11-20T13:08:49.000-06:00"
+        },
+        "employee1@smimedemo.sslcom.link": {
+          "method": null,
+          "status": "not yet started"
+        }
+      },
+      "effective_date": null,
+      "expiration_date": null,
+      "algorithm": null,
+      "external_order_number": "probe-domain-20261120-190645-2c58-employee1",
+      "domains": [
+        "smimedemo.sslcom.link",
+        "employee1@smimedemo.sslcom.link"
+      ],
+      "site_seal_code": null,
+      "subscriber_agreement": null,
+      "server_software": 1,
+      "contacts": [],
+      "authorized_users": {
+        "contract_signer": {},
+        "contract_requestor": {},
+        "contract_approver": {}
+      },
+      "end_entity_certificates": null
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "step": "revoke_one_serial",
+  "recorded_at": "2026-11-20T16:47:44+00:00",
+  "request": {
+    "method": "DELETE",
+    "path": "/certificate/co-671lg0u8oaf",
+    "auth_placement": "query",
+    "query": {
+      "reason": "CESSATIONOFOPERATION",
+      "serials": "[\"26:93:61:50:a3:f6:a8:3a:e6:71:57:8b:e6:18:d7:66\"]",
+      "account_key": "REDACTED",
+      "secret_key": "REDACTED"
+    },
+    "json": null
+  },
+  "response": {
+    "status": 404,
+    "content_type": "application/json; charset=utf-8",
+    "body": {
+      "error": "This order has no issued certificate."
+    }
+  }
+}

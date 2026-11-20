@@ -1,0 +1,63 @@
+{
+  "step": "order_employee2",
+  "recorded_at": "2026-11-20T19:10:11+00:00",
+  "request": {
+    "method": "POST",
+    "path": "/certificates",
+    "auth_placement": "query",
+    "query": {
+      "account_key": "REDACTED",
+      "secret_key": "REDACTED"
+    },
+    "json": {
+      "product": 300,
+      "period": 365,
+      "email_address": "employee2@smimedemo.sslcom.link",
+      "external_order_number": "probe-domain-20261120-190645-2c58-employee2",
+      "recipient": {
+        "email": "employee2@smimedemo.sslcom.link"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "body": {
+      "ref": "co-c01lg16oi18",
+      "registrant": {
+        "organization": null,
+        "organization_unit": null,
+        "street_address_1": null,
+        "street_address_2": null,
+        "street_address_3": null,
+        "locality": null,
+        "state_or_province": null,
+        "post_office_box": null,
+        "postal_code": null,
+        "country": null,
+        "email": "employee2@smimedemo.sslcom.link",
+        "assumed_name": null,
+        "company_number": null,
+        "business_category": null,
+        "organization_identifier": null,
+        "duns_number": null,
+        "incorporation_country": null,
+        "incorporation_date": null,
+        "incorporation_state": null,
+        "incorporation_city": null
+      },
+      "order_status": "validating, please wait",
+      "validations": null,
+      "order_amount": "$30.00",
+      "external_order_number": "probe-domain-20261120-190645-2c58-employee2",
+      "certificate_url": "https://sandbox.ssl.com/team/TEAM/certificate_orders/co-c01lg16oi18",
+      "receipt_url": "https://sandbox.ssl.com/team/TEAM/orders/522a-1lg16oi",
+      "smart_seal_url": "https://sandbox.ssl.com/team/TEAM/certificate_orders/co-c01lg16oi18/site_seal",
+      "validation_url": "https://sandbox.ssl.com/team/TEAM/certificate_orders/co-c01lg16oi18/validation",
+      "certificates": null,
+      "certificate_contents": {
+        "ref": "co-c01lg16oi18-0"
+      }
+    }
+  }
+}

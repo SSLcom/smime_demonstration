@@ -1,0 +1,3 @@
+employee_id,email,devices
+alice,alice@example.com,phone:ecc;laptop:ecc;shared:rsa
+bob,bob@example.com,laptop:ecc

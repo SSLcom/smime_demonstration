@@ -23,7 +23,7 @@ from smime_demo.workflows.issuance import (
 from smime_demo.workflows.multi_device import check_multi_device, issue_multi_device
 from tests.unit.fake_sws import FakeSws
 
-DOMAIN_NAME = "acme.example"
+DOMAIN_NAME = "globex.example"
 ALICE = Employee("alice", f"alice@{DOMAIN_NAME}", parse_devices("phone:ecc;laptop:ecc;shared:rsa"))
 BOB = Employee("bob", f"bob@{DOMAIN_NAME}", parse_devices("laptop:ecc"))
 
@@ -64,7 +64,7 @@ def validate(sws, store, tmp_path, **kw):
     return validate_domain(
         sws,
         store,
-        "acme",
+        "globex",
         ALICE,
         domain=DOMAIN_NAME,
         locality="Springfield",
@@ -102,7 +102,7 @@ def test_domain_must_match_first_employee(sws, store, tmp_path):
         validate_domain(
             sws,
             store,
-            "acme",
+            "globex",
             ALICE,
             domain="other.example",
             locality="x",
@@ -117,9 +117,9 @@ def test_domain_must_match_first_employee(sws, store, tmp_path):
 
 
 def test_onboarding_requires_a_validated_domain(sws, store, tmp_path):
-    store.customer("acme", create=True)["domain"] = DOMAIN_NAME
+    store.customer("globex", create=True)["domain"] = DOMAIN_NAME
     with pytest.raises(DomainNotValidated):
-        onboard_customer(sws, store, "acme", [ALICE], path=DOMAIN, out_dir=tmp_path)
+        onboard_customer(sws, store, "globex", [ALICE], path=DOMAIN, out_dir=tmp_path)
 
 
 def test_domain_path_issues_every_device_without_clicks(sws, store, tmp_path):
@@ -127,19 +127,19 @@ def test_domain_path_issues_every_device_without_clicks(sws, store, tmp_path):
     validate(sws, store, tmp_path)
 
     outcomes = onboard_customer(
-        sws, store, "acme", [ALICE, BOB], path=DOMAIN, out_dir=tmp_path, p12_password="pw"
+        sws, store, "globex", [ALICE, BOB], path=DOMAIN, out_dir=tmp_path, p12_password="pw"
     )
     assert [o.error for o in outcomes] == [None, None]
     assert [len(o.devices) for o in outcomes] == [3, 1]
     assert all(not d.verify_failures for o in outcomes for d in o.devices)
     # Alice's order is the one from step 1; Bob got a new one.
     assert [c[0] for c in sws.calls].count("create_order") == 2
-    alice_dir = tmp_path / "customers" / "acme" / "alice"
+    alice_dir = tmp_path / "customers" / "globex" / "alice"
     assert (alice_dir / "shared.p12").exists()
     assert stat.S_IMODE((alice_dir / "phone.key.pem").stat().st_mode) == 0o600
 
     # Re-running issues nothing new.
-    again = onboard_customer(sws, store, "acme", [ALICE, BOB], path=DOMAIN, out_dir=tmp_path)
+    again = onboard_customer(sws, store, "globex", [ALICE, BOB], path=DOMAIN, out_dir=tmp_path)
     assert all(d.skipped for o in again for d in o.devices)
     assert [c[0] for c in sws.calls].count("generate_certificate") == 4
 
@@ -148,7 +148,7 @@ def test_employee_off_the_domain_is_reported(sws, store, tmp_path):
     sws.published.add(f"_abc123.{DOMAIN_NAME}")
     validate(sws, store, tmp_path)
     stranger = Employee("eve", "eve@elsewhere.example", parse_devices("p:ecc"))
-    (outcome,) = onboard_customer(sws, store, "acme", [stranger], path=DOMAIN, out_dir=tmp_path)
+    (outcome,) = onboard_customer(sws, store, "globex", [stranger], path=DOMAIN, out_dir=tmp_path)
     assert "not on the validated domain" in outcome.error
 
 
@@ -160,16 +160,16 @@ def onboarded(sws, store, tmp_path):
     sws.published.add(f"_abc123.{DOMAIN_NAME}")
     validate(sws, store, tmp_path)
     onboard_customer(
-        sws, store, "acme", [ALICE, BOB], path=DOMAIN, out_dir=tmp_path, p12_password="pw"
+        sws, store, "globex", [ALICE, BOB], path=DOMAIN, out_dir=tmp_path, p12_password="pw"
     )
     return sws, store
 
 
 def test_offboard_one_device(onboarded):
     sws, store = onboarded
-    laptop = store.employee("acme", "alice")["devices"]["laptop"]["serial"]
-    offboard(sws, store, "acme", reason="SUPERSEDED", serial=laptop)
-    rows = {(r.employee_id, r.device): r.status for r in inventory(sws, store, "acme")}
+    laptop = store.employee("globex", "alice")["devices"]["laptop"]["serial"]
+    offboard(sws, store, "globex", reason="SUPERSEDED", serial=laptop)
+    rows = {(r.employee_id, r.device): r.status for r in inventory(sws, store, "globex")}
     assert rows[("alice", "laptop")] == "revoked"
     assert rows[("alice", "phone")] == "issued"
     assert rows[("bob", "laptop")] == "issued"
@@ -177,26 +177,26 @@ def test_offboard_one_device(onboarded):
 
 def test_offboard_one_employee_then_customer(onboarded):
     sws, store = onboarded
-    offboard(sws, store, "acme", reason="CESSATIONOFOPERATION", employee_id="alice")
-    statuses = {(r.employee_id, r.device): r.status for r in inventory(sws, store, "acme")}
+    offboard(sws, store, "globex", reason="CESSATIONOFOPERATION", employee_id="alice")
+    statuses = {(r.employee_id, r.device): r.status for r in inventory(sws, store, "globex")}
     assert {v for k, v in statuses.items() if k[0] == "alice"} == {"revoked"}
     assert statuses[("bob", "laptop")] == "issued"
-    lines = offboard(sws, store, "acme", reason="CESSATIONOFOPERATION")
+    lines = offboard(sws, store, "globex", reason="CESSATIONOFOPERATION")
     assert any("nothing left to revoke" in line or "revoked" in line for line in lines)
-    assert {r.status for r in inventory(sws, store, "acme")} == {"revoked"}
+    assert {r.status for r in inventory(sws, store, "globex")} == {"revoked"}
 
 
 def test_offboard_unknown_serial(onboarded):
     sws, store = onboarded
     with pytest.raises(KeyError, match="not a certificate this partner issued"):
-        offboard(sws, store, "acme", reason="SUPERSEDED", serial="deadbeef")
+        offboard(sws, store, "globex", reason="SUPERSEDED", serial="deadbeef")
 
 
 def test_inventory_flags_certificates_the_partner_did_not_request(onboarded):
     sws, store = onboarded
-    bob_ref = store.employee("acme", "bob")["order"]["ref"]
+    bob_ref = store.employee("globex", "bob")["order"]["ref"]
     extra = sws.generate_in_browser(bob_ref)
-    rows = inventory(sws, store, "acme")
+    rows = inventory(sws, store, "globex")
     unrequested = [r for r in rows if r.serial == extra]
     assert len(unrequested) == 1 and unrequested[0].device is None
     assert unrequested[0].not_after
@@ -211,13 +211,13 @@ def test_mailbox_path_issues_as_people_confirm(sws, store, tmp_path):
 
     def on_tick(latest):
         if not confirmed_after_first_poll:  # Alice confirms while we wait; Bob never does
-            sws.confirm_mailbox(store.employee("acme", "alice")["order"]["ref"])
+            sws.confirm_mailbox(store.employee("globex", "alice")["order"]["ref"])
             confirmed_after_first_poll.append(True)
 
     outcomes = onboard_customer(
         sws,
         store,
-        "acme",
+        "globex",
         [ALICE, BOB],
         path=MAILBOX,
         out_dir=tmp_path,
@@ -236,10 +236,10 @@ def test_mailbox_path_issues_as_people_confirm(sws, store, tmp_path):
 
 
 def test_order_is_never_created_twice(sws, store, tmp_path):
-    store.employee("acme", "bob", BOB.email)
-    store.mark_order_attempted("acme", "bob", MAILBOX)  # e.g. a timeout after the POST
+    store.employee("globex", "bob", BOB.email)
+    store.mark_order_attempted("globex", "bob", MAILBOX)  # e.g. a timeout after the POST
     (outcome,) = onboard_customer(
-        sws, store, "acme", [BOB], path=MAILBOX, out_dir=tmp_path, polling=polling()
+        sws, store, "globex", [BOB], path=MAILBOX, out_dir=tmp_path, polling=polling()
     )
     assert "no ref was recorded" in outcome.error
     assert not any(c[0] == "create_order" for c in sws.calls)
@@ -273,10 +273,10 @@ def test_roster_parsing(tmp_path):
     (tmp_path / "dev.csr").write_text("x")
     path = tmp_path / "roster.csv"
     path.write_text(
-        "employee_id,email,devices\nalice,Alice@Acme.example,phone:ecc;token:csr=dev.csr\n"
+        "employee_id,email,devices\nalice,Alice@Globex.example,phone:ecc;token:csr=dev.csr\n"
     )
     (emp,) = read_roster(path)
-    assert emp.email == "alice@acme.example" and emp.domain == "acme.example"
+    assert emp.email == "alice@globex.example" and emp.domain == "globex.example"
     assert emp.devices[1] == Device("token", "csr", tmp_path / "dev.csr")
     for bad in ("", "phone", "phone:dsa", "a:ecc;a:rsa"):
         with pytest.raises(ValueError):
@@ -284,7 +284,7 @@ def test_roster_parsing(tmp_path):
 
 
 def test_external_order_number_is_safe():
-    assert external_order_number("Acme Corp", "alice@acme") == "Acme-Corp-alice-acme"
+    assert external_order_number("Globex Corp", "alice@globex") == "Globex-Corp-alice-globex"
 
 
 def test_serial_hex_pads_to_whole_bytes():

@@ -72,11 +72,11 @@ smime-demo check
 
 ```bash
 cp examples/roster.example.csv roster.csv        # change the addresses to your test domain
-smime-demo domain validate acme --employees roster.csv --domain your-test-domain.example \
+smime-demo domain validate globex --employees roster.csv --domain your-test-domain.example \
     --locality Houston --state Texas             # publish the CNAME it prints; it waits
-smime-demo customer onboard acme --employees roster.csv
-smime-demo customer status acme
-smime-demo customer offboard acme --employee bob --reason CESSATIONOFOPERATION
+smime-demo customer onboard globex --employees roster.csv
+smime-demo customer status globex
+smime-demo customer offboard globex --employee bob --reason CESSATIONOFOPERATION
 ```
 
 What happens:

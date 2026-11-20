@@ -6,9 +6,30 @@ partner that serves organizations: every employee gets certificates for their
 devices, and the partner's backend does all the work through one SSL.com account.
 
 Every API call in this repository has been exercised against the SSL.com sandbox
-(`https://sws-test.sslpki.com`). [`docs/API_GUIDE.md`](docs/API_GUIDE.md) walks
-through each workflow call by call, with the real request and response for every
-step, and notes where the sandbox differs from the public Swagger spec.
+(`https://sws-test.sslpki.com`).
+
+## The API contract: `docs/API_GUIDE.md`
+
+**Start here if you are integrating with the API, whether or not you use this code.**
+[`docs/API_GUIDE.md`](docs/API_GUIDE.md) is the API contract for mailbox-validated
+S/MIME: it documents each call exactly as the SSL.com sandbox behaves, not as the
+public Swagger spec describes it. It covers:
+
+- **Both workflows, step by step**: validating an organization's domain once and
+  then issuing for every employee, and issuing for one person through an activation
+  link. Every step shows the real request as a ready-to-edit `curl` command and the
+  real response the sandbox returned.
+- **What to send**, including fields the Swagger spec omits (`recipient`,
+  `POST /generate_certificate`) and the placeholder city and state some orders need.
+- **How to read responses**: order status values, multi-certificate orders, and the
+  error bodies that arrive with HTTP 200.
+- **Reference**: the issued certificate profile, the activation email and page, and
+  every difference from the Swagger spec.
+
+The raw requests and responses behind every example are in
+[`docs/examples/`](docs/examples/) as JSON, one file per call. The code in
+`src/smime_demo/client.py` implements exactly the calls the guide documents, and no
+others.
 
 ## Two ways to prove control of the mailboxes
 
